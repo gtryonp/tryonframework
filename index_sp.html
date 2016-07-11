@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+	<title>TRYON FRAMEWORK</title>
+	<link rel="shortcut icon" href="favicon.ico">	
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+		<script src="scripts/tryonframework.js"></script>
+	</head>
+	
+	<style>
+		body					{background:#acf;}
+		.divtitle		{font:italic bold 6vmin verdana;color:#fff;padding:0% 1%;text-shadow: 2px 2px #000;}
+		.divtext			{font:bold 2.5vmin verdana;color:#000;}
+		.divautor		{font:bold 2vmin verdana;color:#00a;float:right;padding:1%;}
+		.dividioma		{font:bold 1.5vmin verdana;float:right;}
+		.divcode			{font:bold 2vmin verdana;color:#a00;background:#cff;padding:5px 0px 0px 50px;}
+		.botones			{font:2vmin verdana;padding:1%;}
+		a							{color:#f00;}
+	</style>
+	
+	<body>
+		<div class='dividioma'><a href='index.html'>English</a></div>
+		<div class='divtitle'>Tryon Framework</div>
+		<div class='divtext'>
+			Es un interfase de documento m&uacute;ltiple (MDI) dise&ntilde;ado para ser usado en p&aacute;ginas web (si, en HTML: php, .net, Java). Lo he hecho de uso sencillo.<br/>
+			&nbsp;<br/>
+			Las ventanas creadas son movibles, se pueden cambiar de tama&ntilde;o y se pueden apilar una sobre otra. Al seleccionar una ventana &eacute;sta se posiciona adelante.
+			Puedes abrir tantas ventanas como necesites. Cada una es una p&aacute;gina independiente. Soporta pantallas t&aacute;ctiles. Probado en Chrome, Firefox, Opera y IE.<br/>
+			PRE-REQUISITOS: Necesitas incluir jquery y jqueryUI en la p&aacute;gina para que funcione.<br/>
+			&nbsp;<br/>
+			<i>Como usar el Framework Tryon:</i><br/>
+			&nbsp;<br/>
+			a) Poner en la secci&oacute;n header las l&iacute;neas necesarias para incluir jquery y jqueryUI (como usualmente har&iacute;as):<br/>
+			<div class='divcode'>&lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;</div>
+			<div class='divcode'>&lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"&gt;&lt;/script&gt; </div>
+			<div class='divcode'>&lt;link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" /&gt;</div>
+			&nbsp;<br/>
+			b) Incluye el framework: <a href='scripts/tryonframework.js'>desc&aacute;rgalo de aqu&iacute;</a> <br/>
+			<div class='divcode'>&lt;script src="scripts/tryonframework.js"&gt;&lt;/script&gt;</div>
+			&nbsp;<br/>
+			c) Y ya est&aacute;! Para abrir una ventana MDI, llamar a la funci&oacute;n de la siguiente manera:<br/>
+			<div class='divcode'>// top.popup(texto_tu_URL,texto_titulo,numero_izquierda,numero_arriba,numero_alto,numero_ancho);</div>
+			<div class='divcode'>top.popup('demo.html','titulo de la ventana',100,100,300,400);</div>
+			&nbsp;<br/>
+			d)Ejemplos:<br/>
+			<div class='divcode'>
+				<input class='botones' type='button' onclick="top.popup('demo.html','ventana titulo 1',100,100,300,400);"	title="top.popup('demo.html','ventana titulo 1',100,100,300,400);" value="MDI tama&ntilde;o 1" >
+				<input class='botones' type='button' onclick="top.popup('demo.html','ventana titulo 2',320,400,200,400);"	title="top.popup('demo.html','vntana titulo 2',320,400,200,400);" value="MDI tama&ntilde;o 2" >
+				<input class='botones' type='button' onclick="top.popup('demo.html');"																					title="top.popup('demo.html');" value="MDI tama&ntilde;o 3 (Sin par&aacute;metros)" >
+			</div>
+		</div>
+		
+	<div class='divautor'>AUTOR: Grenville Francis Tryon Pera <a href='mailto:gtryonp@hotmail.com'>gtryonp@hotmail.com</a></div>
+		
+	</body>
+	
+</html>
